@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 var articleOne = {
     title:'articleone',
-    heading:'ASHISH',
+    heading:'ANKIT - THE CASSANOVA',
     date: '5 feb 2018',
     content:` <p> I have never let my schooling interfere with my education.
             <hr/> -ANKIT 
