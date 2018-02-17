@@ -20,7 +20,7 @@ body {
     height: 1000px;
 }
 .container{
-            max-width:1000px;
+            max-width:10000px;
             margin:0 auto;
             color:red;
             font-family:times-new-roman;
