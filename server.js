@@ -39,7 +39,7 @@ function createTemplate (data){
             ${heading}
           </h1>
           <div> 
-          <img src="https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"/>
+          <img src="C:\Users\abc\Desktop\IMG-20180217-WA0011.jpg"/>
           <DIV>${date}</DIV>
           <div>${content}
           </div>
