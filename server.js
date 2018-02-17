@@ -39,7 +39,7 @@ function createTemplate (data){
             ${heading}
           </h1>
           <div> 
-          <img src="C:\Users\abc\Desktop\IMG-20180217-WA0011.jpg"/>
+          <img src="https://github.com/Ashish1897/imad-app/blob/master/ui/IMG-20180217-WA0011.jpg"/>
           <DIV>${date}</DIV>
           <div>${content}
           </div>
