@@ -4,7 +4,51 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var articleOne = {
+    title:'articleone',
+    heading:'ASHISH',
+    date: '5 feb 2018',
+    content:` <p> I have never let my schooling interfere with my education.
+            <hr/> -ANKIT 
+            <P>You can never be overdressed or overeducated. <HR/>-ANKIT
+            <p>loathe narcissism, but I approve of vanity. <HR/>-ANKIT
+            `
+};
+function createTemplate (data){
+    var title= data.title;
+    var heading= data.heading;
+    var date= data.date;
+    var content= data.comtent;
 
+    var htmlTemplate=
+    `<html>
+     <head>
+        <title>
+           ${title}
+        </title>
+         <link href="/ui/style.css" rel="stylesheet" />
+     </head>
+    <body>
+        <div class="container">
+          <div>
+            <a href="/">Home </a>
+          </div>
+        
+          <hr/>
+          <h1>
+            ${heading}
+          </h1>
+          <DIV>${date}</DIV>
+          <div>${content}
+          </div>
+        </div>
+    </body>
+    </html>
+    
+    `
+    ;
+    return htmlTemplate;
+}
 app.get('/', function (req, res){
     res.sendFile(path.join(__dirname, 'ui','index.html'));
     
@@ -13,7 +57,7 @@ app.get('/', function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
     
 });
-app.get('/article-two', function (req,res) {res.sendFile(path.join(__dirname, 'ui','article-two.html'));});
+app.get('/article-two', function (req,res) {res.send(createTemplate(articleOne));});
 app.get('/article-three', function (req,res) {res.send('article three is available and will be served');});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
