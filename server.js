@@ -38,6 +38,8 @@ function createTemplate (data){
           <h1>
             ${heading}
           </h1>
+          <div> 
+          <img src="C:\Users\abc\Desktop\IMG-20180217-WA0009.jpg"/>
           <DIV>${date}</DIV>
           <div>${content}
           </div>
