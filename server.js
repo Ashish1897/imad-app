@@ -64,6 +64,9 @@ app.get('/article-three', function (req,res) {res.send('article three is availab
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
   });
+app.get('/ui/IMG-20180217-WA0011.jpg',function(req, res){
+    res.sendFile(path.join(__dirname,'ui','IMG-20180217-WA0011.jpg'));
+});  
   
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
