@@ -14,7 +14,7 @@ var article =
         heading:'ANKIT-THE CASSANOVA'
         content:`<p>They can conquer who believe they can.` 
     }
-    'rticle-Two':{
+    'article-Two':{
         title:'SAHIL'
         heading:'SAHIL- THE GENTLEMAN'
         content:`<p> I put my heart and my soul into my work, and have lost my mind in the process.</p>`
