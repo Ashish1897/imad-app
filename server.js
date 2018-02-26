@@ -10,24 +10,14 @@ var articles= {
         heading:'SHUKLA - THE CHATTERBOX',
         date: '26 FEBRUARY 2018',
         content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P>`
-    }
-    articleThree : { 
-        title:'SAHIL'
-        heading:'SAHIL - THE GENTLEMAN'
-        date: '26 FEBRUARY 2018',
-        content:` <p> I put my heart and my soul into my work, and have lost my mind in the process.</p>'
-        
-    }
+ };
+    
     articleOne : {
     title:'articleone',
     heading:'ANKIT - THE CASSANOVA',
     date: '5 feb 2018',
-    content:` <p> I have never let my schooling interfere with my education.
-            <hr/> -ANKIT 
-            <P>You can never be overdressed or overeducated. <HR/>-ANKIT
-            <p>loathe narcissism, but I approve of vanity. <HR/>-ANKIT
-     }       `
-};
+    content:` <p> They can conquer who believe they can.`
+     }       
 function createTemplate (data){
     var title= data.title;
     var heading= data.heading;
