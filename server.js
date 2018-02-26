@@ -6,20 +6,20 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles = 
+var article = 
 {
     
-    articleOne: {
+   ' article-One': {
         title:'ANKIT'
         heading:'ANKIT-THE CASSANOVA'
         content:`<p>They can conquer who believe they can.` 
     }
-    articleTwo:{
+    'rticle-Two':{
         title:'SAHIL'
         heading:'SAHIL- THE GENTLEMAN'
         content:`<p> I put my heart and my soul into my work, and have lost my mind in the process.</p>`
     },
-    articleThree:{
+    'article-Three':{
         title:'SHUKLA'
         heading:'SHUKLA - THE CHATTERBOX'
         content:`<p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.`
@@ -65,10 +65,10 @@ app.get('/', function (req, res){
     res.sendFile(path.join(__dirname, 'ui','index.html'));
     
 });
-app.get('/article-one', function (req, res){
-    res.send(createTemplate(articleTwo));});
-app.get('/article-two', function (req,res) {res.send(createTemplate(articleOne));});
-app.get('/article-three', function (req,res) {res.send(createTemplate(articleThree));});
+app.get('/:articleName', function (req, res){
+    var articleName= req.params.articleName;
+    res.send(createTemplate(articles[articleNme]));});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
   });
