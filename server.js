@@ -4,7 +4,21 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articleOne = {
+var articles= {
+    articleTwo : { 
+        title:'SHUKLA',
+        heading:'SHUKLA - THE CHATTERBOX',
+        date: '26 FEBRUARY 2018',
+        content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P>`
+    }
+    articleThree : { 
+        title:'SAHIL'
+        heading:'SAHIL - THE CHATTERBOX',
+        date: '26 FEBRUARY 2018',
+        content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P> `
+        
+    }
+    articleOne : {
     title:'articleone',
     heading:'ANKIT - THE CASSANOVA',
     date: '5 feb 2018',
@@ -12,7 +26,7 @@ var articleOne = {
             <hr/> -ANKIT 
             <P>You can never be overdressed or overeducated. <HR/>-ANKIT
             <p>loathe narcissism, but I approve of vanity. <HR/>-ANKIT
-            `
+     }       `
 };
 function createTemplate (data){
     var title= data.title;
