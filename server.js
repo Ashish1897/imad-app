@@ -4,14 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articles= {
-    articleTwo : { 
-        title:'SHUKLA',
-        heading:'SHUKLA - THE CHATTERBOX',
-        date: '26 FEBRUARY 2018',
-        content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P>`
- };
-    
+var articles= {};
+       
     articleOne : {
     title:'articleone',
     heading:'ANKIT - THE CASSANOVA',
