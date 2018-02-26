@@ -4,14 +4,28 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articles= {};
-       
+var articles =  
+{ 
     articleOne : {
-    title:'articleone',
-    heading:'ANKIT - THE CASSANOVA',
-    date: '5 feb 2018',
-    content:` <p> They can conquer who believe they can.`
-     }       
+        title:'articleone',
+        heading:'ANKIT - THE CASSANOVA',
+         date: '5 feb 2018',
+        content:` <p> They can conquer who believe they can.` 
+    }
+    articleThree : { 
+        title:'SAHIL'
+        heading:'SAHIL - THE GENTLEMAN'
+        date: '26 FEBRUARY 2018',
+        content:` <p> I put my heart and my soul into my work, and have lost my mind in the process.</p>`
+    }
+    articleTwo : { 
+        title:'SHUKLA',
+        heading:'SHUKLA - THE CHATTERBOX',
+        date: '26 FEBRUARY 2018',
+        content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P>`
+    }
+};   
+           
 function createTemplate (data){
     var title= data.title;
     var heading= data.heading;
