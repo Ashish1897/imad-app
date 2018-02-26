@@ -13,9 +13,9 @@ var articles= {
     }
     articleThree : { 
         title:'SAHIL'
-        heading:'SAHIL - THE CHATTERBOX',
+        heading:'SAHIL - THE GENTLEMAN'
         date: '26 FEBRUARY 2018',
-        content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P> `
+        content:` <p> I put my heart and my soul into my work, and have lost my mind in the process.</p>'
         
     }
     articleOne : {
