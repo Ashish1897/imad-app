@@ -4,28 +4,26 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var articles =  
-{ 
-    articleOne : {
-        title:'articleone',
-        heading:'ANKIT - THE CASSANOVA',
-         date: '5 feb 2018',
-        content:` <p> They can conquer who believe they can.` 
+
+
+var articles = {
+    
+    articleOne: {
+        title: 'ANKIT'
+        heading:'ANKIT- THE CASSANOVA'
+        content:`<p>They can conquer who believe they can.</p>`
     }
-    articleThree : { 
+    articleTwo:{
         title:'SAHIL'
-        heading:'SAHIL - THE GENTLEMAN'
-        date: '26 FEBRUARY 2018',
-        content:` <p> I put my heart and my soul into my work, and have lost my mind in the process.</p>`
+        heading:'SAHIL- THE GENTLEMAN'
+        content:`<p> I put my heart and my soul into my work, and have lost my mind in the process.</p>`
+    },
+    articleThree:{
+        title:'SHUKLA'
+        heading:'SHUKLA - THE CHATTERBOX'
+        content:`<p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.`
     }
-    articleTwo : { 
-        title:'SHUKLA',
-        heading:'SHUKLA - THE CHATTERBOX',
-        date: '26 FEBRUARY 2018',
-        content:` <p> The learner always begins by finding fault, but the scholar sees the positive merit in everything.</P>`
-    }
-};   
-           
+};
 function createTemplate (data){
     var title= data.title;
     var heading= data.heading;
